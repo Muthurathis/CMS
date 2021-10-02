@@ -1,0 +1,15 @@
+{
+    "name": "muthu/cms",
+    "autoload": {
+        "psr-4": {
+            "Muthu\\Cms\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Muthurathis",
+            "email": "muthurathisari1@gmail.com"
+        }
+    ],
+    "require": {}
+}
