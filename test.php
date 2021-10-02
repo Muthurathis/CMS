@@ -1,5 +1,5 @@
 <?php
-$connection=mysqli_connect('sql304.epizy.com','epiz_29918729','08Fjycbw3fJ','epiz_29918729_Blog');
+$connection=mysqli_connect('sql304.epizy.com','epiz_29918729','08Fjycbw3fJ','epiz_29918729_Blog2');
 
 echo "working ,..";
 $posts_query="SELECT * FROM posts ";
