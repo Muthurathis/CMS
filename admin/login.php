@@ -1,5 +1,5 @@
 <?php
- include '../includes/db.php';
+//  include '../includes/db.php';
 
   session_start();
 
@@ -76,40 +76,40 @@
                   <?php
   
 
-                            if(isset($_POST['login'])){
+                            // if(isset($_POST['login'])){
 
-                            $email=$_POST['email'];
-                            $password=$_POST['password'];
+                            // $email=$_POST['email'];
+                            // $password=$_POST['password'];
 
-                            $select_user_query="SELECT * FROM users where user_email='$email'";
-                            $select_user_result=mysqli_query($connection,$select_user_query);
+                            // $select_user_query="SELECT * FROM users where user_email='$email'";
+                            // $select_user_result=mysqli_query($connection,$select_user_query);
 
-                              while($row=mysqli_fetch_assoc($select_user_result)){
-                              $db_username=$row['user_name'];
-                              $db_password=$row['user_password'];
-                              $db_userroll=$row['user_roll'];
-                              $db_email=$row['user_email'];
+                            //   while($row=mysqli_fetch_assoc($select_user_result)){
+                            //   $db_username=$row['user_name'];
+                            //   $db_password=$row['user_password'];
+                            //   $db_userroll=$row['user_roll'];
+                            //   $db_email=$row['user_email'];
 
-                              }
+                            //   }
 
-                              if($email !== $db_email || $password !== $db_password)
-                              // {   header('location:login.php');{
-                                {
-                                  echo "Email or password is incorrect";
-                              }
+                            //   if($email !== $db_email || $password !== $db_password)
+                            //   // {   header('location:login.php');{
+                            //     {
+                            //       echo "Email or password is incorrect";
+                            //   }
 
-                            else if($email == $db_email && $password==$db_password) {
-                                header('location: ./');
-                                $_SESSION['username']=$db_username;
-                                $_SESSION['email']=$db_email;
-                                $_SESSION['role']=$db_userroll;
-                              }
-                              else{
-                                  echo 'a';
-                              }
+                            // else if($email == $db_email && $password==$db_password) {
+                            //     header('location: ./');
+                            //     $_SESSION['username']=$db_username;
+                            //     $_SESSION['email']=$db_email;
+                            //     $_SESSION['role']=$db_userroll;
+                            //   }
+                            //   else{
+                            //       echo 'a';
+                            //   }
 
 
-                            }
+                            // }
                             ?>
 
                   <div class="text-center">
