@@ -10,8 +10,8 @@ $db='epiz_29918729_Blog';
 $connection=mysqli_connect($host,$user,$pass,$db);
 
 if(!$connection){
-    echo 'Not connected to database';
-    die();
+    echo 'Not connected to database'.mysqli_connect_error();;
+   
 }
 
 ?>
