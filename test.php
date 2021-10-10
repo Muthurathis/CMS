@@ -7,4 +7,6 @@ $post_result=mysqli_query($connection,$posts_query);
 
 $row=mysqli_fetch_assoc($post_result);
 print_r($row);
+
+print_r($row);
 ?>
