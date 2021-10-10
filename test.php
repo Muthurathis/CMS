@@ -5,11 +5,11 @@ echo "working ,..";
 if($connection->connect_error){
     die("connection failed".$connection->connect_error);
 }
-// $posts_query="SELECT * FROM posts ";
-// $post_result=mysqli_query($connection,$posts_query);
+$posts_query="SELECT * FROM posts ";
+$post_result=mysqli_query($connection,$posts_query);
 
-// $row=mysqli_fetch_assoc($post_result);
-// print_r($row);
+$row=mysqli_fetch_assoc($post_result);
+print_r($row);
 
 // print_r($row);
 ?>
