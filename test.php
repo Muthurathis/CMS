@@ -1,6 +1,6 @@
 <?php
-// $connection=mysqli_connect('sql304.epizy.com','epiz_29918729','08Fjycbw3fJ','epiz_29918729_Blog');
-$connection=new mysqli('sql304.epizy.com','epiz_29918729','08Fjycbw3fJ','epiz_29918729_Blog');
+$connection=mysqli_connect('sql5.freesqldatabase.com','sql5443363','Dx8McFPHEi','sql5443363');
+// $connection=new mysqli('sql304.epizy.com','epiz_29918729','08Fjycbw3fJ','epiz_29918729_Blog');
 echo "working ,..";
 if($connection->connect_error){
     die("connection failed".$connection->connect_error);
